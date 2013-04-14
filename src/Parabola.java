@@ -10,7 +10,12 @@ public class Parabola
  
     public point getFocus (Parabola i)
     {
-      
+	return i.focus;
+    }
+ 
+    public hline getDirectrix (Parabola i)
+    {
+        return i.directrix;
     }
 
 //Anupa
