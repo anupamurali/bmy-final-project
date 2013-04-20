@@ -14,7 +14,7 @@ public class Parabola
  
     public hline getDirectrix () {return d;}
 
-//Anupa
+//Anupa 
   public point[] intersectParabola (Parabola i)
   {       
     
