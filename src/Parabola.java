@@ -10,18 +10,22 @@ public class Parabola
          directrix = d;
   }
  
-    public point getFocus () {return f;}
+    public Point getFocus () {return focus;}
  
-    public hline getDirectrix () {return d;}
+    public Hline getDirectrix () {return directrix;}
+
+    public void setFocus (Point newFocus) {focus = newFocus;}
+  
+    public void setDirectrix (Hline newDirectrix) {directrix = newDirectrix;}
 
 //Anupa 
-  public point[] intersectParabola (Parabola i)
+  public Point[] intersectParabola (Parabola i)
   {       
-    
+      Point focus1 = this.getFocus ();
+      Point focus2 = i.getFocus ();
+      Hline directrix1 = this.getDirectrix ();
+      Hline directrix2 = i.getDirectrix ();     
+
+      return [];
   }
-
-    //equation of a  parabola  is (x-h)^2 = 4p(y-k)  where the focus is (h,k+p) and directrix is y=k-p.    (http://jwilson.coe.uga.edu/emt725/class/sarfaty/emt669/instructionalunit/parabolas/parabolas.html)
-
 }
-
-
